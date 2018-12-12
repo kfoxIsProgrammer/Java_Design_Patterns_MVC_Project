@@ -1,0 +1,52 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<style>
+
+    .container{
+        max-width: 400px;
+    }
+    .btn-sm{
+        max-width: 400px;
+    }
+    .profile-name-card{
+
+        font-size: 15px;
+        color: red;
+    }
+    body{
+        background-image: url("https://media.giphy.com/media/mgqefqwSbToPe/giphy.gif");
+        background-size: cover;
+        font-size: 20px;
+    }
+    #inputPassword{
+        color:black;
+    }
+    #inputUsername{
+        color: black;
+    }
+
+</style>
+<body
+    <!--
+        User Log in if the password is wrong
+    -->
+    <div class="container">
+        <div class="card card-container">
+
+
+            <p id="profile-name" class="profile-name-card">Error Invalid Log in</p>
+            <form class="form-signin" method="post" action="/Foxs.Kevin.Project2/DisplaySession"  >
+
+                <input type="username" name="username" id="inputUsername" placeholder="Username" required autofocus><br>
+                <input type="password" name="password" id="inputPassword"  placeholder="Password" required>
+                <div id="remember" class="checkbox">
+
+                </div>
+                <button type="submit" class="btn btn-outline-danger ">Log in</button>
+            </form><!-- /form -->
+
+        </div><!-- /card-container -->
+    </div>
+</body>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Foxs.Kevin.Project2PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>transferObjects_WJPA.Course</class>
+  <class>transferObjects_WJPA.Experience</class>
+  <class>transferObjects_WJPA.Session</class>
+  <class>transferObjects_WJPA.Student</class>
+  <class>transferObjects_WJPA.Tutor</class>
+  <class>transferObjects_WJPA.Users</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tutoring"/>
+      <property name="javax.persistence.jdbc.user" value="scott"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="tiger"/>
+    </properties>
+  </persistence-unit>
+</persistence>
